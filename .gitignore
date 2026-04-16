@@ -1,0 +1,14 @@
+# Compiled files
+target/
+*.class
+
+# Eclipse specific
+.settings/
+.project
+.classpath
+.metadata/
+
+# Driver logs and reports
+*.log
+test-output/
+allure-results/
