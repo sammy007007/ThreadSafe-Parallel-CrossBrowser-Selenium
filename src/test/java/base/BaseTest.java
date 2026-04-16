@@ -22,17 +22,17 @@ public class BaseTest extends DriverFactory {
 		
 		case "chrome":
 			DriverFactory.tdriver.set(new ChromeDriver());
-			driver = DriverFactory.getDriver();
+			driver = getDriver();
 			break;
 			
 		case "edge":
 			DriverFactory.tdriver.set(new EdgeDriver());
-			driver = DriverFactory.getDriver();
+			driver = getDriver();
 			break;
 			
 		default:
 			DriverFactory.tdriver.set(new ChromeDriver());
-			driver = DriverFactory.getDriver();
+			driver = getDriver();
 		}
 		
 		driver.manage().window().maximize();
@@ -42,9 +42,8 @@ public class BaseTest extends DriverFactory {
 
 	@AfterMethod
 	public void tearDown() {
-		if (tdriver.get() != null) {
-			tdriver.get().quit();
-			tdriver.remove();
+		if (getDriver() != null) {
+			removeDriver();
 		}
 	}
 }

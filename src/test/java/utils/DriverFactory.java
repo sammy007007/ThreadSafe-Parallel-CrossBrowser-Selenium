@@ -15,6 +15,7 @@ public class DriverFactory {
 	}
 
 	public static void removeDriver() {
+		tdriver.get().quit();
 		tdriver.remove();
 	}
 
