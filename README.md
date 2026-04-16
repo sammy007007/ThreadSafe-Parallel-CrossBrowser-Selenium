@@ -25,6 +25,7 @@ ThreadSafe-Parallel-CrossBrowser-Selenium
 ├── pom.xml                # Maven Dependencies & Plugins
 ├── testng.xml             # Test Suite Configuration for Parallelism
 └── README.md              # Project Documentation
+```
 
 ## Running Tests
 1. Clone the repository.
