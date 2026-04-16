@@ -1,11 +1,11 @@
-# ThreadSafe Parallel Cross-Browser Selenium Framework
+# ThreadSafe Parallel Cross-Browser Selenium Boilerplate
 
-A high-performance Selenium-Java automation framework built to handle parallel execution across multiple browsers using a thread-safe architecture.
-
+A robust, lightweight Selenium-Java template designed to solve the challenges of Thread-Safe Parallel Execution. This project provides the core architecture needed to build a scalable, enterprise-grade automation framework.
 ##  Key Features
-*   **Thread-Safe Driver Management:** Utilizes `ThreadLocal<WebDriver>` to ensure complete isolation for each test thread, preventing state leakage.
-*	**True Parallelism:** Configured via TestNG at the `methods` level to maximize CPU utilization and drastically reduce suite execution time.*   **Cross-Browser Capability:** Dynamic browser invocation (Chrome/Edge) using TestNG parameters.
-*   **Clean Page Object Model (POM):** Separated base logic, utilities, and test scripts for high maintainability.
+*   **ThreadLocal Driver Factory: Implements a robust ThreadLocal<WebDriver> pattern to ensure zero state leakage between parallel tests
+*	**True Parallelism:** Configured via TestNG at the `methods` and `Test` level parallel execution across different browsers to maximize CPU utilization and drastically reduce suite execution time.
+*   **Cross-Browser Capability:** Dynamic browser invocation (Chrome/Edge) using TestNG parameters.
+*   **Modular Foundation: Clean separation of BaseTest, DriverFactory, and Test layers, ready to be expanded into a full Page Object Model (POM).
 
 ## Tech Stack
 *   **Language:** Java 21
