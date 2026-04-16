@@ -30,6 +30,6 @@ ThreadSafe-Parallel-CrossBrowser-Selenium
 ## Running Tests
 1. Clone the repository.
 2. Open the project in Eclipse/IntelliJ as a Maven project.
-3. Right-click `/ThreadSafe-Parallel-CrossBrowser-Selenium/testng.xml` .
+3. Right-click `testng.xml` .
 4. Select **Run As > TestNG Suite**.
 
