@@ -19,7 +19,7 @@
         <configuration>
           <suiteXmlFiles>
             <!-- This runs your TestNG XML from the suites folder -->
-            <suiteXmlFile>src/test/java/suites/SearchAddCartTest.xml</suiteXmlFile>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -42,12 +42,6 @@
         <scope>test</scope>
     </dependency>
 
-    <!-- WebDriverManager (replaces manual exe drivers) -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.7.0</version>
-    </dependency>
 
     <!-- Apache POI (for Excel data) -->
     <dependency>
